@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Perfil</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+
+    <h2>¡Hola! {{ user }} este es tu perfil</h2>
+
+    <form method="get" action="/accounts/logout">
+        <button type="submit">Cerrar sesión</button>
+    </form>
+</div>
+
+{% endblock %}

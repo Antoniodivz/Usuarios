@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body%}
+<div class = "container">
+    <h1>Buen viaje y próximo retorno</h1>
+
+    <p>
+        Usted ha terminado la sesión
+    </p>
+    <h2>¿Desea iniciar sesión?</h2>
+    <form method="get" action="/accounts/login">
+    <button type="submit">Iniciar sesión</button>
+    </form>
+</div>
+
+{% endblock %}
